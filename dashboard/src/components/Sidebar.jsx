@@ -17,12 +17,16 @@ const Sidebar = () => {
     md:hover:overflow-auto pb-10">
       {activeMenu && (<>
         <div className="flex justify-between items-center">
-          <Link to="/" onClick={() => {setActiveMenu(false) }} className="item-center gap-3 ml-3mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900">
+          <Link to="/"
+            onClick={() => { setActiveMenu(false) }}
+            className="item-center gap-3 ml-3mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
+          >
             <SiShopware /><span> Shoppy</span>
           </Link>
           <TooltipComponent content="Menu" position="BottomCenter">
             <button type="button"
-              onClick={() => setActiveMenu((prevActiveMenu)=>!prevActiveMenu)} className="text-xl rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden"
+              onClick={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)}
+              classNname="text-xl rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden"
             >
               <MdOutlineCancel />
             </button>
