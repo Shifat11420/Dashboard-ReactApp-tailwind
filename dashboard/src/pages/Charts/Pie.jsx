@@ -7,11 +7,11 @@ const Pie = () => (
     <ChartsHeader category="Pie" title="Project Cost Breakdown" />
     <div className="w-full">
       <PieChart
-       id="chart-pie"
-       data={pieChartData}
-       legendVisibility
-       height="full"
-       />
+        id="chart-pie"
+        data={pieChartData}
+        legendVisibility
+        height="full"
+      />
     </div>
   </div>
 
