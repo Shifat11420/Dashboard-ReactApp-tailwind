@@ -13,7 +13,7 @@ const Area = () => {
       <div className="w-full">
 
         <ChartComponent
-          id="line-chart"
+          id="area-chart"
           height="420px"
           primaryXAxis={areaPrimaryXAxis}
           primaryYAxis={areaPrimaryYAxis}
