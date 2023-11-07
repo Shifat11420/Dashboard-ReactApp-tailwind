@@ -26,8 +26,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 )
 
 const Navbar = () => {
-  const { activeMenu, setActiveMenu, isClicked, setIsClicked,
-    handleClick, screenSize, setScreenSize, currentColor } = useStateContext();
+  const { activeMenu, setActiveMenu, isClicked, handleClick, screenSize, setScreenSize, currentColor } = useStateContext();
 
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
@@ -37,13 +36,13 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    if (screenSize<=900) {
+    if (screenSize <= 900) {
       setActiveMenu(false);
-    }else{
+    } else {
       setActiveMenu(true);
     }
-  }, [screenSize])
-  
+  }, [screenSize]);
+
 
 
 
@@ -98,9 +97,7 @@ const Navbar = () => {
                 Michael
               </span>
             </p>
-            <MdKeyboardArrowDown
-              className="text-gray-400 text-14"
-            />
+            <MdKeyboardArrowDown className="text-gray-400 text-14" />
           </div>
         </TooltipComponent>
         {isClicked.cart && <Cart />}
