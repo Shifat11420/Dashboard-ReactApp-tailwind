@@ -8,7 +8,7 @@ const Pie = () => (
     <div className="w-full">
       <PieChart
        id="chart-pie"
-       dataSource={pieChartData}
+       data={pieChartData}
        legendVisibility
        height="full"
        />
